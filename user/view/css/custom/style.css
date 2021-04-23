@@ -1,0 +1,22 @@
+.resume-image img {
+    max-width: 100%;
+}
+
+.link-container {
+    position: relative;
+}
+
+.link-image {
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    margin: auto;
+    max-width: 60%;
+    filter: brightness(0) invert(1);
+}
+
+span:hover {
+    cursor: pointer;
+}

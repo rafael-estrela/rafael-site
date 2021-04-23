@@ -1,0 +1,46 @@
+RewriteEngine On
+
+Options -Indexes
+
+# Registration
+RewriteRule   ^register/?$   register-action.php
+RewriteRule   ^personalData/?$   personal-data-action.php
+
+# Login
+RewriteRule   ^login/?$   login-action.php
+RewriteRule   ^postLogin/?$   post-login.php
+
+# Forgot Password
+RewriteRule   ^forgotPassword/?$   forgot-password-action.php
+RewriteRule   ^resetPassword/?$   new-password-action.php
+
+# Resend Email
+RewriteRule   ^resendEmail/?$   resend-email-action.php
+
+# Graduation
+RewriteRule   ^graduation/?$   graduation-action.php
+RewriteRule   ^graduation/delete/([0-9]+)/?$   graduation-action.php?del=$1
+
+# Project
+RewriteRule   ^project/?$   project-action.php
+RewriteRule   ^project/delete/([0-9]+)/?$   project-action.php?del=$1
+
+# Work
+RewriteRule   ^work/?$   work-action.php
+RewriteRule   ^work/delete/([0-9]+)/?$   work-action.php?del=$1
+
+# Skills
+RewriteRule   ^skill/?$   skill-action.php
+RewriteRule   ^skill/delete/([0-9]+)/?$   skill-action.php?del=$1
+
+# Greetings
+RewriteRule   ^greetings/?$   greetings-action.php
+
+# Trivia
+RewriteRule   ^trivia/?$   trivia-action.php
+
+# Contact
+RewriteRule   ^contact/?$   contact-action.php
+
+# Settings
+RewriteRule   ^settings/?$   settings-action.php

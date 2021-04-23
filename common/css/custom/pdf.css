@@ -1,0 +1,67 @@
+body {
+    font-family: dhyana;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.7em;
+}
+
+h2 {
+    margin: 25px 0 0 0;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 10px 0 5px 0;
+}
+
+span, p {
+    font-size: 0.8em;
+}
+
+p {
+    margin: 0 0 2px 0;
+}
+
+hr {
+    color: rgba(255, 255, 255, 0);
+    margin: 5px 0;
+}
+
+.personalData {
+    margin-bottom: 40px;
+}
+
+.nameContainer {
+    width: 50%;
+    float: left;
+}
+
+.contactContainer {
+    width: 50%;
+    text-align: right;
+    float: right;
+}
+
+.contactContainer p {
+    margin: 0;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.skill {
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.stars {
+    font-family: arial;
+    font-size: 1em;
+    color: #ffa500;
+}

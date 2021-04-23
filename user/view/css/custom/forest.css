@@ -1,0 +1,27 @@
+.social-icons a:hover {
+    background-color: #8B9556;
+}
+
+.dev-icons .list-inline-item i:hover {
+    color: #8B9556;
+}
+
+.bg-primary {
+    background-color: #8B9556 !important;
+}
+
+.text-primary {
+    color: #8B9556 !important;
+}
+
+a {
+    color: #8B9556;
+}
+
+a:hover, a:focus, a:active {
+    color: #756D54;
+}
+
+#sideNav .navbar-toggler:focus {
+    outline-color: #ABB557;
+}

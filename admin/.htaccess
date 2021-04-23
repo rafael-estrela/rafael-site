@@ -1,0 +1,86 @@
+RewriteEngine On
+
+Options -Indexes
+
+# Registration
+RewriteRule   ^register/?$   view/register.php
+RewriteRule   ^register/suc=([0-9]+)$   view/register.php?suc=$1
+RewriteRule   ^register/err=(-[0-9]+)$   view/register.php?err=$1
+RewriteRule   ^aboutMe/?$   view/personal-data.php
+RewriteRule   ^aboutMe/err=(-[0-9]+)$   view/personal-data.php?err=$1
+RewriteRule   ^confirm/([a-f0-9]+)/?$   action/confirm.php?cid=$1
+
+# Login
+RewriteRule   ^login/?$   view/login.php
+RewriteRule   ^login/suc=([0-9]+)$   view/login.php?suc=$1
+RewriteRule   ^login/err=(-[0-9]+)$   view/login.php?err=$1
+
+# Forgot Password
+RewriteRule   ^forgotPassword/?$   view/forgot-password.php
+RewriteRule   ^forgotPassword/suc=([0-9]+)$   view/forgot-password.php?suc=$1
+RewriteRule   ^forgotPassword/err=(-[0-9]+)$   view/forgot-password.php?err=$1
+RewriteRule   ^resetPassword/([a-f0-9]+)/?$   view/new-password.php?cid=$1
+RewriteRule   ^resetPassword/([a-f0-9]+)/err=(-[0-9]+)$   view/new-password.php?cid=$1&err=$2
+
+# Resend Email
+RewriteRule   ^resendEmail/?$   view/resend-email.php
+RewriteRule   ^resendEmail/suc=([0-9]+)$   view/resend-email.php?suc=$1
+RewriteRule   ^resendEmail/err=(-[0-9]+)$   view/resend-email.php?err=$1
+
+# Graduation
+RewriteRule   ^graduation/?$   view/graduation.php
+RewriteRule   ^graduation/suc=([0-9]+)/?$   view/graduation.php?suc=$1
+RewriteRule   ^graduation/err=(-[0-9]+)/?$   view/graduation.php?err=$1
+RewriteRule   ^graduation/([0-9]+)/?$   view/graduation.php?id=$1
+RewriteRule   ^graduation/([0-9]+)/?suc=([0-9]+)$   view/graduation.php?id=$1&suc=$2
+RewriteRule   ^graduation/([0-9]+)/?err=(-[0-9]+)$   view/graduation.php?id=$1&err=$2
+
+# Work
+RewriteRule   ^work/?$   view/work.php
+RewriteRule   ^work/suc=([0-9]+)/?$   view/work.php?suc=$1
+RewriteRule   ^work/err=(-[0-9]+)/?$   view/work.php?err=$1
+RewriteRule   ^work/([0-9]+)/?$   view/work.php?id=$1
+RewriteRule   ^work/([0-9]+)/suc=([0-9]+)$   view/work.php?id=$1&suc=$2
+RewriteRule   ^work/([0-9]+)/err=(-[0-9]+)$   view/work.php?id=$1&err=$2
+
+# Projects
+RewriteRule   ^project/?$   view/project.php
+RewriteRule   ^project/suc=([0-9]+)/?$   view/project.php?suc=$1
+RewriteRule   ^project/err=(-[0-9]+)/?$   view/project.php?err=$1
+RewriteRule   ^project/([0-9]+)/?$   view/project.php?id=$1
+RewriteRule   ^project/([0-9]+)/suc=([0-9]+)$   view/project.php?id=$1&suc=$2
+RewriteRule   ^project/([0-9]+)/err=(-[0-9]+)$   view/project.php?id=$1&err=$2
+
+# Skills
+RewriteRule   ^skill/?$   view/skill.php
+RewriteRule   ^skill/suc=([0-9]+)/?$   view/skill.php?suc=$1
+RewriteRule   ^skill/err=(-[0-9]+)/?$   view/skill.php?err=$1
+RewriteRule   ^skill/([0-9]+)/?$   view/skill.php?id=$1
+RewriteRule   ^skill/([0-9]+)/suc=([0-9]+)$   view/skill.php?id=$1&suc=$2
+RewriteRule   ^skill/([0-9]+)/err=(-[0-9]+)$   view/skill.php?id=$1&err=$2
+
+# Trivia
+RewriteRule   ^trivia/?$   view/trivia.php
+RewriteRule   ^trivia/suc=([0-9]+)$   view/trivia.php?suc=$1
+RewriteRule   ^trivia/err=(-[0-9]+)$   view/trivia.php?err=$1
+
+# Greetings
+RewriteRule   ^greetings/?$   view/greetings.php
+RewriteRule   ^greetings/suc=([0-9]+)$   view/greetings.php?suc=$1
+RewriteRule   ^greetings/err=(-[0-9]+)$   view/greetings.php?err=$1
+
+# Contact
+RewriteRule   ^contact/?$   view/contact.php
+RewriteRule   ^contact/suc=([0-9]+)$   view/contact.php?suc=$1
+RewriteRule   ^contact/err=(-[0-9]+)$   view/contact.php?err=$1
+
+# Settings
+RewriteRule   ^settings/?$   view/settings.php
+RewriteRule   ^settings/suc=([0-9]+)$   view/settings.php?suc=$1
+RewriteRule   ^settings/err=(-[0-9]+)$   view/settings.php?err=$1
+
+# 404
+ErrorDocument 404 /rafael-site/admin/view/404.php
+
+# 403
+ErrorDocument 403 /rafael-site/admin/view/403.php

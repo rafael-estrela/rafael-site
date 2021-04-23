@@ -1,0 +1,7 @@
+.c100 .bar, .c100 .fill {
+    transition: border-color 0.5s ease-in-out;
+}
+
+.c100 > span {
+    transition: color 0.5s ease-in-out;
+}

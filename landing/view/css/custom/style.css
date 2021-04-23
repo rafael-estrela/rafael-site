@@ -1,0 +1,21 @@
+header.masthead {
+    position: relative;
+    overflow: hidden;
+    padding-top: calc(7rem + 72px);
+    padding-bottom: 7rem;
+    background: -webkit-gradient(linear, left bottom, left top, from(#553c8b), to(#9ea9f0));
+    background: linear-gradient(0deg, #553c8b 0%, #9ea9f0 100%);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+header.masthead .bg-circle {
+    background: -webkit-gradient(linear, left bottom, left top, from(#9ea9f0), to(#553c8b));
+    background: linear-gradient(0deg, #9ea9f0 0%, #553c8b 100%);
+}
+
+footer {
+    background-color: #9ea9f0;
+}

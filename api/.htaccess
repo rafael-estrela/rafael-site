@@ -1,0 +1,52 @@
+RewriteEngine On
+
+Options -Indexes
+
+# Login, Email Confirmation, Registration and Forgot Password
+#RewriteRule   ^login/?$   view/login.php
+#RewriteRule   ^login/suc=([0-9]+)$   view/login.php?suc=$1
+#RewriteRule   ^login/err=(-[0-9]+)$   view/login.php?err=$1
+RewriteRule   ^register/image/upload/?$   register/index.php?profilePic
+#RewriteRule   ^register/suc=([0-9]+)$   view/register.php?suc=$1
+#RewriteRule   ^register/err=(-[0-9]+)$   view/register.php?err=$1
+#RewriteRule   ^confirm/(.+)$   action/confirm.php?cid=$1
+#RewriteRule   ^forgot-password/$   view/forgot-password.php
+
+# Home
+RewriteRule   ^home/accessChart/?$   home/index.php?chart
+
+# Graduation
+RewriteRule   ^graduation/image/upload/?$   graduation/index.php?graduationImage
+
+# Work
+RewriteRule   ^work/image/upload/?$   work/index.php?workImage
+
+# Projects
+RewriteRule   ^project/image/upload/?$   project/index.php?projectImage
+RewriteRule   ^project/types/?$   project/index.php?typeList
+RewriteRule   ^project/type/?$   project/index.php?singleType
+RewriteRule   ^project/type/upload/?$   project/index.php?typeImage
+
+# Skills
+RewriteRule   ^skill/list/(.+)?$   skill/index.php?skill=$1
+
+# Trivia
+#RewriteRule   ^trivia/?$   view/trivia.php
+
+# Greetings
+#RewriteRule   ^greetings/?$   view/greetings.php
+
+# Contact
+#RewriteRule   ^contact/?$   view/contact.php
+
+# 404
+#ErrorDocument 404 /rafael-site/admin/view/404.php
+
+# Settings
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# PDF
+RewriteRule   ^pdf/([a-zA-Z0-9_\.-]+)/?$   pdf/index.php?username=$1
+
+RewriteRule   ^settings/username/([a-zA-Z0-9_\.-]+)/?$   settings/index.php?usernameAvailable=$1
